@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+</head>
+
+<body>
+        <h1>Suas Informações</h1>
+        <form action="mailto:nadylamousinho@gmail.com" method="get">
+                <fieldset>
+                        <legend>Informações principais: </legend>
+
+                        <label for="cNome">Nome: </label>
+                        <input type="text" name="SeuNome" id="cNome" required="required">
+                        <br> <br>
+                        <label for="sNome">Sobrenome: </label>
+                        <input type="text" name="Sobrenome" id="sNome" required="required">
+                        <br> <br>
+                        <label for="sIdade">Idade: </label>
+                        <input type="text" name="SuaIdade" id="sIdade" required="required">
+                        <br> <br>
+                        <label for="Email">E-mail: </label>
+                        <input type="text" name="email" id="Email" required="required">
+                        <br> <br>
+                        <label for="senha">Senha: </label>
+                        <input type="password" name="senha" id="senha" required="required">
+                        <br> <br> <br>
+                        <p>Qual o seu gênero?</p>
+                        <input type="radio" name="genero" id="Masculino">
+                        <label for="Masculino">Masculino</label>
+                        <br> <br>
+                        <input type="radio" name="genero" id="Feminino">
+                        <label for="Feminino">Feminino</label>
+                        <br> <br>
+                        <input type="radio" name="genero" id="não">
+                        <label for="não">Não Quero Declarar</label>
+                </fieldset>
+                <br> <br> <br>
+                <fieldset>
+                        <legend>Locomoção: </legend>
+                        <h2>Quais transportes você utiliza?</h2>
+                        <br> <br>
+                        <input type="checkbox" name="transp1" id="tp1">
+                        <label for="tp1">Ônibus</label>
+                        <br> <br>
+                        <input type="checkbox" name="transp2" id="tp2">
+                        <label for="tp2">Metrô</label>
+                        <br> <br>
+                        <input type="checkbox" name="transp3" id="tp3">
+                        <label for="tp3">Carro</label>
+                        <br> <br>
+                        <input type="checkbox" name="transp4" id="tp4">
+                        <label for="tp4">Motocicleta</label>
+                        <br> <br>
+                        <input type="checkbox" name="transp5" id="tp5">
+                        <label for="tp5">Bike</label>
+                </fieldset>
+                <br> <br> <br>
+                <fieldset>
+                        <legend>Time: </legend>
+                        <label for="time">escolha seu time: </label>
+                        <select name="time" id="time">
+                                <option value="op1" disabled selected>Selecione seu time</option>
+                                <option value="Corinthians">Corinthians</option>
+                                <option value="Palmeiras">Palmeiras</option>
+                                <option value="botafogo">Botafogo</option>
+                                <option value="saoPaulo">São Paulo</option>
+                        </select>
+                </fieldset>
+                <br><br>
+                <fieldset>
+                        <legend>Naturalidade</legend>
+                        <label for="cCidade">Qual a sua cidade?</label>
+                        <input type="text" name="cCid" id="cCidade" list="sugestao" autocomplete="on"
+                                placeholder="Sua cidade">
+                        <datalist id="sugestao">
+                                <option value="Santos"></option>
+                                <option value="São Paulo"></option>
+                                <option value="Guarulhos"></option>
+                                <option value="Juquitiba"></option>
+                        </datalist>
+                </fieldset>
+                <b>
+                        <fieldset>
+                                <legend>Range: </legend>
+                                <p>Utilizando range</p>
+                                0
+                                <input type="range" name="valor_01" id="valor_01">
+                                100
+
+                                <br>
+                                <label for="text01">Qualquer coisa</label><br>
+                                <textarea name="text01" id="text01" cols="55" rows="10"
+                                        placeholder="coloque sas ideias aqui" maxlength="1000" required></textarea>
+                        </fieldset>
+
+                        <br> <br>
+                        <input type="submit" value="Enviar">
+
+
+
+        </form>
+        <footer></footer>
+</body>
+
+</html>
